@@ -16,7 +16,9 @@ type HangmanDrawingProps = {
 export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
   return (
     <div className="drawing">
-      {BODY_PARTS.slice(0, numberOfGuesses)}
+      {BODY_PARTS.slice(0, numberOfGuesses).map((part, index) => (
+        <div key={index}>{part}</div>
+      ))}
       <div className="top-right line" />
       <div className="top line" />
       <div className="middle line" />
