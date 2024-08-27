@@ -8,18 +8,19 @@
 
 .bottom {
     height: 10px;
-    width: 250px;
+    width: 150px;
+    margin-left: 50px;
 }
 
 .middle {
-    height: 400px;
+    height: 250px;
     width: 10px;
     margin-left: 120px;
 }
 
 .top {
     height: 10px;
-    width: 200px;
+    width: 150px;
     margin-left: 120px;
 }
 
@@ -33,29 +34,29 @@
 }
 
 .head {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     border: 10px solid white;
     
     position: absolute;
     top: 45px;
-    right: -30px;
+    right: -20px;
 }
 
 .body {
     width: 10px;
-    height: 100px;
+    height: 60px;
     background: white;
     
     position: absolute;
-    top: 110px;
+    top: 90px;
     right: 0;
 }
 
 .right {
     position: absolute;
-    right: -100px;
+    right: -50px;
     rotate: 30deg;
     transform-origin: left top;
 }
@@ -68,21 +69,21 @@
 }
 
 .arm {
-    width: 100px;
+    width: 50px;
     height: 10px;
     background: white;
 
-    top: 130px;
+    top: 100px;
 }
 
 .leg {
-    width: 100px;
+    width: 50px;
     height: 10px;
     background: white;
 
     rotate: 60deg ;
-    top: 200px;
-    right: -100px;
+    top: 140px;
+    right: -50px;
 }
 
 .left.leg {
