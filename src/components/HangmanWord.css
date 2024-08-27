@@ -1,7 +1,6 @@
 .word {
     display: flex;
     gap: .25em;
-    margin-top: 20px;
 
     font-size: 6rem;
     font-weight: bold;
