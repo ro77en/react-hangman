@@ -1,6 +1,16 @@
-import './Keyboard.css'
+import "./Keyboard.css";
 
-export function Keyboard() {
+type KeyboardProps = {
+  activeLetters: string[];
+  inactiveLetters: string[];
+  addGuessedLetter: (letter: string) => void;
+};
+
+export function Keyboard({
+  activeLetters,
+  inactiveLetters,
+  addGuessedLetter,
+}: KeyboardProps) {
   const KEYS = [
     "a",
     "b",
@@ -30,12 +40,24 @@ export function Keyboard() {
     "z",
   ];
 
-  return <div className='keyboard'>
-    {KEYS.map(key => {
+  return (
+    <div className="keyboard">
+      {KEYS.map((key) => {
+        const isActive = activeLetters.includes(key);
+        const isInactive = inactiveLetters.includes(key);
         return (
-            <button className='btn' key={key}>{key}</button>
-        )
-    })}
-
-  </div>
+          <button
+            onClick={() => addGuessedLetter(key)}
+            className={`btn ${isActive ? "active" : ""} ${
+              isInactive ? "inactive" : ""
+            }`}
+            disabled={isActive || isInactive}
+            key={key}
+          >
+            {key}
+          </button>
+        );
+      })}
+    </div>
+  );
 }
