@@ -4,3 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+
+.container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.showResult {
+  font-size: 2rem;
+  text-align: center;
+}
