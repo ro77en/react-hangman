@@ -17,6 +17,9 @@ hangman-game/
 │   │   ├── HangmanWord.tsx
 │   │   ├── Keyboard.css
 │   │   ├── Keyboard.tsx
+│   ├── wordlists/
+│   │   ├── brPortuguese.json
+│   │   ├── english.json
 │   ├── App.css               
 │   ├── App.tsx        
 │   ├── index.css              
