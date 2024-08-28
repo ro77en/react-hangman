@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./App.css";
-import words from "./wordList.json";
+import words from "./wordlists/english.json";
 import { HangmanDrawing } from "./components/HangmanDrawing";
 import { HangmanWord } from "./components/HangmanWord";
 import { Keyboard } from "./components/Keyboard";
@@ -48,7 +48,6 @@ function App() {
     };
   }, [guessedLetters]);
 
-  console.log(wordToGuess);
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
